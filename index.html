@@ -237,16 +237,49 @@
                     <h2 class="mb-5">Contact Me</h2>
 <!--                     <p><center>paragraph</center></p>
                     <p class="mb-0"><center>paragraph2</center></p> -->
-                    <form action="mailto:ukhattak100@gmail.com" method="post" enctype="text/plain">
-                        Name:<br>
-                        <input type="text" name="name"><br>
-                        E-mail:<br>
-                        <input type="text" name="mail"><br>
-                        Comment:<br>
-                        <input type="text" name="comment" size="100"><br><br>
-                        <input type="submit" value="Send">
-                        <input type="reset" value="Reset">
-                    </form>
+                    <link href="contact-form.css" rel="stylesheet">
+
+<div class="fcf-body">
+
+    <div id="fcf-form">
+<!--     <h3 class="fcf-h3">Contact us</h3>
+ -->
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Email Address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your Message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+<!--         <div class="fcf-credit" id="fcf-credit">
+        Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a>
+        </div> -->
+
+    </form>
+    </div>
+
+</div>
+                    <!-- testing above code -->
                 </div>
             </section>
             <hr class="m-0" />
